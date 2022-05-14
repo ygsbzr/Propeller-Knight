@@ -146,6 +146,8 @@ namespace PropellerKnight
                 }
             }
             orig(self, hitInstance);
+            if (self.hp <= 0)
+                _hm_OnDeath();
         }
 
         private bool transition;

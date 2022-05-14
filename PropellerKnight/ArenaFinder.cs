@@ -151,7 +151,6 @@ namespace PropellerKnight
             {
                 fi.SetValue(_hm, fi.GetValue(hornHP));
             }
-            ReflectionHelper.SetField(_hm, "enemyDamageAudio",ReflectionHelper.GetField<HealthManager, AudioEvent>(hornHP, "enemyDamageAudio"));
 
             var _sr = prop.GetComponent<SpriteRenderer>();
             _sr.material = materials["flash"];
